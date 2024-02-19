@@ -1,0 +1,34 @@
+/* CSS to position the kitten images within the wheelbarrow using absolute positioning */
+
+/* Selects the image with a class of kitty-1 */
+img.kitty-1 {
+  position: absolute;
+  top: 30px;
+  left: 100px;
+}
+
+/* Selects the image with an id of kitty-2 */
+img#kitty-2 {
+  position: absolute;
+  top: 80px;
+  left: 300px;
+}
+
+/* Selects the image inside the element with an id of basket (via descendent relationship) */
+#basket img {
+  position: absolute;
+  top: 100px;
+  left: 180px;
+}
+
+/* Selects the image based on the respective sibling element */
+#wheelbarrow-foreground + img {
+  position: absolute;
+  top: 200px;
+  left: 380px;
+}
+
+/* Selects the image that has an alt attribute value matching "Kitty 5", via the attribute selector */
+img[alt="Kitty 5"] {
+  /* Add positioning properties if needed */
+}
